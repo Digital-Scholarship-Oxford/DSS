@@ -8,4 +8,7 @@ Roued-Cunliffe, Henriette. 2011. ‘A Decision Support System for the Reading of
 ## From the thesis abstract:
 The prototype is used to illustrate how a DSS, by remembering complex reasoning, can aid the process of interpretation that is reading ancient documents. It is based on the idea that the interpretation process goes through a network of interpretation. The network of interpretation illustrates a recursive process where scholars move between reading levels such as *‘these strokes look like the letter c’* or *‘these five letters must be the word primo’*.
 
+## See example videos:
+https://roued.com/DSS/Example1.mp4
+
 
