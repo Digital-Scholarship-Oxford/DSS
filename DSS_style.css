@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/**
+* DSS_style.css
+*
+* Style page for DSS
+*
+* @package    DSS prototype
+* @author     Henriette Roued <henriette@roued.com>
+* @license    AGPL-3.0-or-later https://www.gnu.org/licenses/agpl-3.0.html
+* @link       http://roued.com
+* @link       https://ora.ox.ac.uk/objects/uuid:9d547661-4dea-4c54-832b-b2f862ec7b25
+* @since      File available since 2011
+*/
+/* General formatting */
+h1 {
+	font-size:110%;
+	font-variant:small-caps;
+}
+h2 {
+	font-size:100%;
+	font-variant:small-caps;
+}
+p{
+	font-size:90%;
+}
+/* Main view box */
+#main{
+	background-color:#FFFFFF;
+	margin:50px auto;
+	max-width:900px;
+	min-width:900px;
+	padding:0;
+	width:80%;
+}
+.main-view{
+	width:100%;
+	float:left;
+	border: #dddddd solid 5px;
+	padding:10px;
+	margin-bottom:10px;
+}
+/* Line formatting - in main view */
+.line{
+	margin: 30px 0 30px 0;
+	padding-right:10px;
+	width:100%;
+	color:#003366;
+	font-size:20px;
+}
+.linenr{
+	font-variant:small-caps;
+	font-size:13px;
+	color:#444444;
+	padding-right:10px;
+}
+/* Word formatting - in main view */
+.w{
+	border: 2px solid #777777;
+	padding: 13px 10px 10px 3px;
+	margin:0 3px 0 3px;
+	background-color:#cccccc;
+}
+a.word{
+	font-size:12px;
+	padding:10px 4px 10px 4px;
+	background-color:#cccccc;
+	color:#000000;
+}
+/* Character formatting - in main view */
+.c{
+	border: 2px solid #555555;
+	padding:4px;
+	background-color:#eeeeee;
+	color:#333333;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-right:2px;
+}
+/* legend for main view */
+.red{
+	background-color:#f9996a;
+}
+.green{
+	background-color:#b3e594;
+}
+.yellow{
+	background-color:#f3e871;
+}
+.blue{
+	background-color:#b2e7f8;
+}
+/* Left sidebar */
+#left{
+	border: #dddddd solid 5px;
+	width:15%;
+	float:left;
+}
+#title{
+	padding:2%;
+}
+.image{
+	width:98%;
+	margin:1%;
+}
+/* Link view of the document */
+.link-view{
+	float:left;
+	border-top: #888888 solid 1px;
+	border-bottom: #888888 solid 1px;
+	border-left: #888888 solid 1px;
+	margin-top: 3px;
+	padding:2px;
+}
+/* Line formatting - in link view */
+.link-line{
+	margin: 10px 0 20px 0;
+	padding-right:3px;
+	width:200%;
+	color:#003366;
+	font-size:20px;
+}
+.link-linenr{
+	font-variant:small-caps;
+	font-size:12px;
+	color:#000000;
+	padding-right:10px;
+	position:relative;
+}
+/* Word formatting - in link view */
+.link-w{
+	border: 2px solid #777777;
+	padding: 4px 4px 6px 2px;
+	margin:0 2px 0 2px;
+	background-color:#cccccc;
+}
+.link-w-highlight{
+	border: 2px solid #8D4D43;
+	padding: 4px 4px 6px 2px;
+	margin:0 2px 0 2px;
+	background-color:#d47465;
+}
+a.link-word{
+	font-size:12px;
+	padding:6px 4px 8px 4px;
+	background-color:#cccccc;
+	color:#000000;
+}
+/* Character formatting - in link view */
+.link-c{
+	background-color:#eeeeee;
+	color:#333333;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-right:2px;
+	border: 2px solid #555555;
+	font-size:12px;
+	padding:3px;
+}
+.link-c-highlight{
+	border: 2px solid #8D4D43;
+	background-color:#d47465;
+	font-size:12px;
+	padding:3px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-right:2px;
+}
+/* Screenoverlay formatting */
+#screenoverlay{
+	background-color: #000000;
+	opacity: .75;
+	filter: alpha(opacity=75);
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+/* showTop() formatting */
+#topbox{
+	position: fixed;
+	left: 1000px;
+	top: 100px;
+	padding: 5px;
+	width: 400px;
+	height: 400px;
+	z-index: 1001;
+}
+#box{
+	background:#ffffff;
+	opacity: .85;
+	min-height: 80px;
+	padding:20px;
+	max-height:400px;
+	overflow:auto;
+}
+/* showArg() formatting */
+#argtopbox{
+	position: fixed;
+	left: 300px;
+	top: 100px;
+	padding: 5px;
+	width: 400px;
+	height: 400px;
+	z-index: 1001;
+}
+#argbox{
+	background:#ffffff;
+	opacity: .85;
+	min-height: 80px;
+	padding:20px;
+	max-height:400px;
+	overflow: auto;
+}
+/* showSug() formatting */
+#sugtopbox{
+	position: fixed;
+	left: 300px;
+	top: 100px;
+	padding: 5px;
+	width: 400px;
+	height: 400px;
+	z-index: 1001;
+}
+#sugbox{
+	background:#ffffff;
+	opacity: .85;
+	min-height: 80px;
+	padding:20px;
+	max-height:400px;
+	overflow: auto;
+}
+/* close boxes formatting */
+ a.close{
+	padding: 2px 5px 5px 358px;
+	position:relative;
+	color:#B31A14;
+	background:#ffffff;
+	opacity: .85;
+}
+
+
+
